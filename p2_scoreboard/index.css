@@ -1,0 +1,52 @@
+body {
+    margin: 20px;
+    text-align: center;
+    background: #1B244A;
+    font: verdana;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 30px;
+;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.special {
+    font-family: Cursed Timer ULiL;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 90px;
+    line-height: 126.67px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #F94F6D;
+    border: solid black;
+    background: black;
+}
+
+.btns {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 25px;
+    background: #1B244A;
+    border: 2px solid white;
+    color: white;
+  
+}
+
+.btn{
+    padding-top: 100px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    height: 55px;
+    background: #1B244A;
+    border: 2px solid red;
+    color: red;
+}
