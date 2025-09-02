@@ -1,0 +1,70 @@
+body {
+    font: Karla;
+    background-color: #1F2937;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 40px;
+    line-height: 0.5;
+}
+
+.h1white {
+    color: white;
+    font-weight: 600;
+}
+
+.h1green {
+    color:#10B981;
+    font-weight: 600;
+}
+
+h3 {
+    padding-top: 10px;
+    color: white;
+    font-weight: 200;
+}
+
+.btnstyle {
+    margin-top: 20px;
+    background-color: #10B981;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 170px;
+    height: 40px;
+}
+
+.btntoggle {
+    margin-top: 10px;
+    background-color: #273549;
+    color: #55F991;
+    border-radius: 5px;
+    border: none;
+    width: 180px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    height: 2px;
+    background-color: #2F3E53;
+}
+
+.btnpass {
+
+    background-color: #273549;
+    color: #55F991;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 180px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+p {
+    color: #10B981;
+}
