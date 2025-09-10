@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.upper {
+    background-color:#6943FF;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    padding: 5% 0;
+}
+.upper h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #6943FF;
+    padding: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #F4F4F4;
+}
+
+.inputBtn{
+    margin: 0 auto;
+    width: 15%;
+    height: 30%;
+    font-size: 350%;
+    color: white;
+    background-color: #6943FF;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.convertBtn{
+    margin-top: 20px;
+    width: 16%;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: #6943FF;
+    color: #3D3D3D;
+    font-weight: bolder;
+}
+
+.outputTxt {
+    display: inline-block;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0%;
+    padding: 20px;
+    text-align: center;
+}

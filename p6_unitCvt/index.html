@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- 1. divide into 2 sections and code the design first -->
+        <div class="upper">
+            <h1> Metric/Imperial Unit Conversion </h1>
+            <input class="inputBtn" type="text" id="num-El">
+            <button class="convertBtn" onclick="conversion()"> Convert </button>
+        </div>
+        
+        <div class="lower">
+            <div class="outputTxt">
+                <h3> Length (Meter/Feet) </h3>
+                <p id="len-El">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+            </div>
+            <div class="outputTxt">
+                <h3> Volume (Liters/Gallons) </h3>
+                <p id="vol-El">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+            </div>
+            <div class="outputTxt">
+                <h3> Mass (Kilograms/Pounds) </h3>
+                <p id="mass-El">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
