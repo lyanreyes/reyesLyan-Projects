@@ -7,14 +7,13 @@ body {
 }
 
 .sitebg {
-    margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     margin: 0 auto;
     text-align: center;
 }
 
 .imgFormat {
-    width: 400px;
+    width: 450px;
     height: 500px;
     object-fit: cover;
     object-position: center;

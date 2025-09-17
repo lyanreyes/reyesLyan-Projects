@@ -21,19 +21,36 @@ const imgUrl = [
 //get random num
 let points = 0
 let randomNum = 0
+let guessCount = 0
+let placeholder = []
 
 function generateImg(){
-    randomNum = Math.floor(Math.random() * imgUrl.length)
+    let charHolder
+
+    do {
+        randomNum = Math.floor(Math.random() * imgUrl.length)
+        charHolder = imgUrl[randomNum]
+    } while(placeholder.includes(charHolder))
+
     charImg.src = `Characters/${imgUrl[randomNum]}`
     charImg.style.filter = "blur(10px)"
+
+    placeholder.push(charHolder)
+
+    if (placeholder.length == imgUrl.length){
+        charImg.src = `congrats.jpg`
+        charImg.style.filter = "none"
+        placeholder = []
+    }
 }
 
 function correctAnswer(){
-    charImg.style.filter = "none"
+    charImg.style.filter ="none"
 }
 
 
 inputChar.addEventListener("keydown", function (event) {
+
     if (event.key === "Enter") {
         let guess = inputChar.value.toLowerCase().trim();
 
@@ -43,9 +60,38 @@ inputChar.addEventListener("keydown", function (event) {
         if (guess === urlName) {
             correctAnswer();
             points += 1;
-            total.innerHTML = `TOTAL: ${points}`;
+            total.innerHTML = `TOTAL: ${points}`
+
+            guessCount = 0
+
+            if (points >= 50) {
+                charImg.src = `congrats.jpg`
+                charImg.style.filter = "none"
+                placeholder = []
+                return
+            }
+
+            setTimeout(function(){
+                generateImg()
+            }, 1000)
+
+        } else {
+            guessCount += 1
         }
+
+        if (guessCount > 2) {
+            points = 0
+            charImg.style.filter = "none"
+            total.innerHTML = `TOTAL: ${points}`;
+            setTimeout(function(){
+                generateImg()
+            }, 1000)
+            guessCount = 0
+        } 
+        console.log(guessCount)
 
         inputChar.value = "";
     }
 });
+
+// store the jpg file, and it should not match the existing, else, generate another number
