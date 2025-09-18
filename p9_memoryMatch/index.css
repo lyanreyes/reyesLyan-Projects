@@ -1,0 +1,43 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.center {
+    padding-top: 15px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    background-color: lightblue;
+    padding-bottom: 15px;
+}
+
+.btnformat button{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    background-image: url(qblock.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.btnformat {
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btnformat button:hover {
+    background-image: url(rusure.jpg);
+}
+
+.results {
+    margin-top: 15px;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 15px;
+}
