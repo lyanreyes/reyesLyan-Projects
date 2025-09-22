@@ -1,0 +1,68 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Archivo Black";
+}
+
+.hero{
+    margin: auto;
+    background-image: url("images/tokyo.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.center{
+    margin: auto;
+    width: 100%;
+    height: 435px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle{
+    background-image: url("images/black.gif");
+    margin: auto;
+    height: 435px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-style {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.ender {
+    background-color: black;
+}
+
+#s15:hover{
+   content: url("images/s15drift.gif");
+}
+
+#ae86:hover{
+    content: url("images/ae86drift.gif");
+}
+
+#r32:hover{
+    content: url("images/r32drift.gif");
+}
