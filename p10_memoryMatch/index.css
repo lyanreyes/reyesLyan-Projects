@@ -29,7 +29,7 @@ body {
     padding-top: 20px;
 }
 
-.btnformat button:hover {
+.btnformat button.hidden:hover {
     background-image: url(rusure.jpg);
 }
 
