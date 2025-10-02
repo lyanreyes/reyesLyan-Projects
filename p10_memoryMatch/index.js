@@ -13,7 +13,7 @@ refreshBtn.addEventListener("click", () => {
     restartGame(false);
 })
 
-// add a place holder image until flipped, revealing itself
+// add a place holder image until flipped, revealing itselfs
 const btn1 = document.getElementById("btn1")
 const btn2 = document.getElementById("btn2")
 const btn3 = document.getElementById("btn3")
